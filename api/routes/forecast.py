@@ -34,3 +34,8 @@ def baseline_comparison():
 @router.get("/feature-importance")
 def feature_importance():
     return forecast_service.get_feature_importance()
+
+
+@router.get("/demand-alerts")
+def demand_alerts():
+    return forecast_service.get_demand_alerts()
